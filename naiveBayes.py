@@ -24,8 +24,10 @@ class Classificador:
 		#dicionario probabilidades das classes a priori
 		self.probsPriori = {}
 		
-	
-
+	def getProbCond(self, atribNome, atribValor, classeValor):
+		result = [ p.probsConds[atribValor] for p in self.probsConds if p.classeValor == classeValor and p.atribNome == atribNome ]
+		return None if not result else result[0]
+		
 class Treinador:
 	SAMPLE_CORRECTION_PSEUDOCOUNT = 0.0001
 	

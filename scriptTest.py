@@ -13,3 +13,5 @@ for p in c.probsConds:
 	for k in p.probsConds.keys():
 		s += p.probsConds[k]
 	print "soma = " + str(s)
+
+print c.getProbCond("nonoAno", "C", "centroOeste")
