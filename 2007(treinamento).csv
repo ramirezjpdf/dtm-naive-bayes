@@ -1,4 +1,4 @@
-regiao;localizacao;rede;1 ano;2 ano;3 ano;4 ano;5 ano;6 ano;7 ano;8 ano;9 ano
+regiao,localizacao,rede,primeiroAno,segundoAno,terceiroAno,quartoAno,quintoAno,sextoAno,setimoAno,oitavoAno,nonoAno
 norte;rural;Estadual;A;E;C;C;C;C;B;B;B
 norte;rural;Federal;--;--;--;--;--;--;--;--;--
 norte;rural;Municipal;B;E;D;C;B;B;B;A;A

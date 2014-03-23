@@ -11,20 +11,21 @@ VALORES_ATTR_ANO = ["A", "B", "C", "D", "E"]
 def converterCsvParaRendimentoEscolar(csvpath):
 	rendimentosEscolares = []
 	with open(csvpath, "rb") as csvfo:
-		reader = csv.reader(csvfo, delimiter=",")
-		reader.next() #escapa a linha de header
+		reader = csv.reader(csvfo, delimiter=";")
+		#escapa a linha de header
+		reader.next()
 		rendimentosEscolares = [RendimentoEscolar(*row) for row in reader]
 	return rendimentosEscolares
 
 def criaTreinadorParaRendimentoEscolar(csvpath):
-	classe = Atributo(attrNome=NOME_CLASSE, valores=VALORES_CLASSE_RENDIMENTO_ESCOLAR)
+	classe = Atributo(attrNome=NOME_CLASSE_RENDIMENTO_ESCOLAR, valores=VALORES_CLASSE_RENDIMENTO_ESCOLAR)
 	atribs = [Atributo("localizacao", ["urbana", "rural"]), Atributo("rede", ["Estadual", "Federal", "Municipal", "Particular"]),
-			  Atributo("1Ano", VALORES_ATTR_ANO), Atributo("2Ano", VALORES_ATTR_ANO), 
-			  Atributo("3Ano",VALORES_ATTR_ANO), Atributo("4Ano",VALORES_ATTR_ANO),
-			  Atributo("5Ano",VALORES_ATTR_ANO), Atributo("6Ano",VALORES_ATTR_ANO),
-			  Atributo("7Ano",VALORES_ATTR_ANO), Atributo("8Ano",VALORES_ATTR_ANO),
-			  Atributo("9Ano",VALORES_ATTR_ANO)]
-	datum = converterCsvRendimentoEscolar(csvpath)
+			  Atributo("primeiroAno", VALORES_ATTR_ANO), Atributo("segundoAno", VALORES_ATTR_ANO), 
+			  Atributo("terceiroAno",VALORES_ATTR_ANO), Atributo("quartoAno",VALORES_ATTR_ANO),
+			  Atributo("quintoAno",VALORES_ATTR_ANO), Atributo("sextoAno",VALORES_ATTR_ANO),
+			  Atributo("setimoAno",VALORES_ATTR_ANO), Atributo("oitavoAno",VALORES_ATTR_ANO),
+			  Atributo("nonoAno",VALORES_ATTR_ANO)]
+	datum = converterCsvParaRendimentoEscolar(csvpath)
 	return Treinador(datum, classe, atribs)
 
 class RendimentoEscolar:
@@ -84,12 +85,16 @@ class Treinador:
 	
 	def calcProbClassePriori(self, classeNome):
 		denominador = len(self.datum)
-		numerador = len([data for data in datum if data.__dict__[self.classe.attrNome] == classeNome])
+		print denominador
+		numerador = len([data for data in self.datum if data.__dict__[self.classe.attrNome] == classeNome])
+		print numerador
 		return numerador / float(denominador)
 
 	'''dado um valor de uma classe e um nome de atributo,
 		devo calcular as probCond de tds os valores desse atributo
 		dado o valor da classe'''
+	#def calcProbCondAtribDadaClasse(self, atribNome, classeNome):
+		
 	
 if __name__ == "__main__":
 	l = converterCsvRendimentoEscolar(sys.argv[1])
