@@ -28,11 +28,17 @@ class Classificador:
 		result = [ p.probsConds[atribValor] for p in self.probsConds if p.classeValor == classeValor and p.atribNome == atribNome ]
 		return None if not result else result[0]
 		
-	def calcProbCondClasseDadoAteibutOs(self, classeValor, atribs):
+	def calcProbCondClasseDadoAtributos(self, classeValor, atribs):
 		prob = self.probsPriori[classeValor]
 		for atribNome in atribs.keys():
 			prob *= self.getProbCond(atribNome, atribs[atribNome], classeValor)
 		return prob
+		
+	def classifica(self, data):
+		probs = {}
+		for classeValor in self.classe.valores:
+			calcProbCondClasseDadoAtributo(classeNome, data)
+		return max(probs, key=probs.get)
 		
 class Treinador:
 	SAMPLE_CORRECTION_PSEUDOCOUNT = 0.0001
