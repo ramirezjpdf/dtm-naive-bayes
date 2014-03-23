@@ -73,6 +73,17 @@ class ProbCondAtribDadaClasse:
 		self.atribNome = atribNome
 		self.classeValor = classeValor
 		self.probsConds = {}
+		
+class Classificador:
+	def __init__(self, classe):
+		#objeto da classe Atributo que representa a classe
+		self.classe = classe
+		#lista de probabilidades condicionais dos atributos dado o valor de alguma classe
+		self.probsConds = []
+		#dicionario probabilidades das classes a priori
+		self.probsPriori = {}
+		
+	
 
 class Treinador:
 	SAMPLE_CORRECTION_PSEUDOCOUNT = 0.001
@@ -80,9 +91,9 @@ class Treinador:
 	def __init__(self, datum, classe, atribs):
 		#lista de objetos de uma classe que representa um dado tipo RendimentoEscolar
 		self.datum = datum
-		#objeto da classe Atributo
+		#objeto da classe Atributo que representa a classe
 		self.classe = classe
-		#lista objetos da classe Atributo
+		#lista objetos da classe Atributo que representam os atributos
 		self.atribs = atribs
 		
 	def calcProbCond(self, atribNome, atribValor, classeNome, classeValor):
@@ -91,12 +102,18 @@ class Treinador:
 		
 		return numerador / float(denominador)
 	
-	def calcProbClassePriori(self, classeNome):
+	def calcProbClassePriori(self, classeValor):
 		denominador = len(self.datum)
 		print denominador
-		numerador = len([data for data in self.datum if data.__dict__[self.classe.atribNome] == classeNome])
+		numerador = len([data for data in self.datum if data.__dict__[self.classe.atribNome] == classeValor])
 		print numerador
 		return numerador / float(denominador)
+	
+	def calcProbsPrioriParaTodasClasses(self):
+		probsPriori = {}
+		for classeValor in classe.valores:
+			probsPriori[classeValor] = self.calcProbClassePriori(classeValor)
+		return probsPriori
 
 	'''dado um valor de uma classe e um nome de atributo,
 		devo calcular as probCond de tds os valores desse atributo
@@ -109,12 +126,22 @@ class Treinador:
 		return probCondAtribDadaClasse
 	
 	def calcProbsCondsParaTodosAtribsParaTodasClasses(self):
+		probsConds = []
 		for classeValor in self.classe.valores:
 			#print classeValor
 			for atrib in self.atribs:
 				#print "\t" + atrib.atribNome
 				p = self.calcProbCondAtribDadaClasse(atrib, classeValor)
+				probsConds.append(p)
 				#print "\t\t" + str(p.probsConds)
+		return probsConds
+	
+	def treina(self):
+		classificador = Classificador(self.classe)
+		classificador.probsConds = self.calcProbsCondsParaTodosAtribsParaTodasClasses()
+		classficador.probsPriori = self.calcProbsPrioriParaTodasClasses()
+		return classificador
+		
 if __name__ == "__main__":
 	l = converterCsvRendimentoEscolar(sys.argv[1])
 	print l
