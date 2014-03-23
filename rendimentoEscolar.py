@@ -1,6 +1,6 @@
 import csv
 import sys
-import from naiveBayes import *
+from naiveBayes import *
 
 NOME_CLASSE_RENDIMENTO_ESCOLAR = "regiao"
 VALORES_CLASSE_RENDIMENTO_ESCOLAR = ["norte", "nordeste", "sudeste", "sul", "centroOeste"]
@@ -59,4 +59,7 @@ class RendimentoEscolar:
 			   
 	def __repr__(self):
 		return self.__str__()
-	
+
+if __name__ == "__main__":
+	l = converterCsvRendimentoEscolar(sys.argv[1])
+	print l
