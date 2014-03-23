@@ -18,7 +18,7 @@ def converterCsvParaRendimentoEscolar(csvpath):
 	return rendimentosEscolares
 
 def criaTreinadorParaRendimentoEscolar(csvpath):
-	classe = Atributo(attrNome=NOME_CLASSE_RENDIMENTO_ESCOLAR, valores=VALORES_CLASSE_RENDIMENTO_ESCOLAR)
+	classe = Atributo(atribNome=NOME_CLASSE_RENDIMENTO_ESCOLAR, valores=VALORES_CLASSE_RENDIMENTO_ESCOLAR)
 	atribs = [Atributo("localizacao", ["urbana", "rural"]), Atributo("rede", ["Estadual", "Federal", "Municipal", "Particular"]),
 			  Atributo("primeiroAno", VALORES_ATTR_ANO), Atributo("segundoAno", VALORES_ATTR_ANO), 
 			  Atributo("terceiroAno",VALORES_ATTR_ANO), Atributo("quartoAno",VALORES_ATTR_ANO),
@@ -62,13 +62,21 @@ class RendimentoEscolar:
 		return self.__str__()
 	
 class Atributo:
-	def __init__(self, attrNome, valores):
+	def __init__(self, atribNome, valores):
 		#nome do atributo classe
-		self.attrNome = attrNome
+		self.atribNome = atribNome
 		#lista de valore que  podem ser assumidos pelo atributo classe
 		self.valores = valores
 		
+class ProbCondAtribDadaClasse:
+	def __init__(self, atribNome, classeValor):
+		self.atribNome = atribNome
+		self.classeValor = classeValor
+		self.probsConds = {}
+
 class Treinador:
+	SAMPLE_CORRECTION_PSEUDOCOUNT = 0.001
+	
 	def __init__(self, datum, classe, atribs):
 		#lista de objetos de uma classe que representa um dado tipo RendimentoEscolar
 		self.datum = datum
@@ -77,24 +85,30 @@ class Treinador:
 		#lista objetos da classe Atributo
 		self.atribs = atribs
 		
-	def calcProbCond(self, attrNome, attrValor, classeNome, classeValor):
+	def calcProbCond(self, atribNome, atribValor, classeNome, classeValor):
 		denominador = len([data for data in self.datum if data.__dict__[classeNome] == classeValor])
-		numerador = len([data for data in self.datum if(data.__dict__[classeNome] == classeValor and data.__dict__[attrNome] == attrValor)])
+		numerador = len([data for data in self.datum if(data.__dict__[classeNome] == classeValor and data.__dict__[atribNome] == atribValor)])
 		
 		return numerador / float(denominador)
 	
 	def calcProbClassePriori(self, classeNome):
 		denominador = len(self.datum)
 		print denominador
-		numerador = len([data for data in self.datum if data.__dict__[self.classe.attrNome] == classeNome])
+		numerador = len([data for data in self.datum if data.__dict__[self.classe.atribNome] == classeNome])
 		print numerador
 		return numerador / float(denominador)
 
 	'''dado um valor de uma classe e um nome de atributo,
 		devo calcular as probCond de tds os valores desse atributo
 		dado o valor da classe'''
-	#def calcProbCondAtribDadaClasse(self, atribNome, classeNome):
-		
+	def calcProbCondAtribDadaClasse(self, atributo, classeValor):
+		probCondAtribDadaClasse = ProbCondAtribDadaClasse(atributo.atribNome, classeValor)
+		for atribValor in atributo.valores:
+			probCond = self.calcProbCond(atributo.atribNome, atribValor, self.classe.atribNome, classeValor)
+			probCondAtribDadaClasse.probsConds[atribValor] = probCond if probCond > 0.0 else Treinador.SAMPLE_CORRECTION_PSEUDOCOUNT
+		return probCondAtribDadaClasse
+	
+	
 	
 if __name__ == "__main__":
 	l = converterCsvRendimentoEscolar(sys.argv[1])
