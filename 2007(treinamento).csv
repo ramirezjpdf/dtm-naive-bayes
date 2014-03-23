@@ -1,6 +1,5 @@
 regiao,localizacao,rede,primeiroAno,segundoAno,terceiroAno,quartoAno,quintoAno,sextoAno,setimoAno,oitavoAno,nonoAno
 norte;rural;Estadual;A;E;C;C;C;C;B;B;B
-norte;rural;Federal;--;--;--;--;--;--;--;--;--
 norte;rural;Municipal;B;E;D;C;B;B;B;A;A
 norte;rural;Particular;A;C;C;B;B;B;B;A;A
 norte;urbana;Estadual;A;C;C;B;B;C;C;C;B
@@ -16,7 +15,6 @@ nordeste;urbana;Federal;E;E;A;A;A;A;C;B;B
 nordeste;urbana;Municipal;A;C;C;C;B;D;C;B;B
 nordeste;urbana;Particular;A;A;A;A;A;A;A;A;A
 sudeste;rural;Estadual;A;A;B;A;B;C;B;B;B
-sudeste;rural;Federal;--;--;--;--;--;--;--;--;--
 sudeste;rural;Municipal;B;C;C;B;B;C;B;B;A
 sudeste;rural;Particular;A;A;A;A;A;A;A;A;A
 sudeste;urbana;Estadual;A;A;A;A;B;B;B;B;C
@@ -24,7 +22,6 @@ sudeste;urbana;Federal;A;A;A;A;A;B;C;B;C
 sudeste;urbana;Municipal;A;B;B;A;B;C;B;B;B
 sudeste;urbana;Particular;A;A;A;A;A;A;A;A;A
 sul;rural;Estadual;A;C;B;B;B;C;B;B;A
-sul;rural;Federal;--;--;--;--;--;--;--;--;--
 sul;rural;Municipal;A;B;B;B;A;C;C;B;A
 sul;rural;Particular;A;B;A;A;B;A;B;A;A
 sul;urbana;Estadual;A;C;B;B;B;C;C;C;B
@@ -32,7 +29,6 @@ sul;urbana;Federal;A;A;A;A;A;B;B;B;A
 sul;urbana;Municipal;A;B;B;B;B;C;C;B;B
 sul;urbana;Particular;A;A;A;A;A;A;A;A;A
 centroOeste;rural;Estadual;B;B;C;B;B;C;B;B;B
-centroOeste;rural;Federal;--;--;--;--;--;--;--;--;--
 centroOeste;rural;Municipal;A;C;C;B;B;C;B;A;A
 centroOeste;rural;Particular;B;B;B;A;A;A;A;A;A
 centroOeste;urbana;Estadual;A;B;B;B;B;C;C;B;B

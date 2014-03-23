@@ -108,8 +108,13 @@ class Treinador:
 			probCondAtribDadaClasse.probsConds[atribValor] = probCond if probCond > 0.0 else Treinador.SAMPLE_CORRECTION_PSEUDOCOUNT
 		return probCondAtribDadaClasse
 	
-	
-	
+	def calcProbsCondsParaTodosAtribsParaTodasClasses(self):
+		for classeValor in self.classe.valores:
+			#print classeValor
+			for atrib in self.atribs:
+				#print "\t" + atrib.atribNome
+				p = self.calcProbCondAtribDadaClasse(atrib, classeValor)
+				#print "\t\t" + str(p.probsConds)
 if __name__ == "__main__":
 	l = converterCsvRendimentoEscolar(sys.argv[1])
 	print l
