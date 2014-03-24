@@ -15,3 +15,11 @@ for p in c.probsConds:
 	print "soma = " + str(s)
 
 print c.getProbCond("nonoAno", "C", "centroOeste")
+
+v = dict(zip(['localizacao','rede','primeiroAno','segundoAno','terceiroAno','quartoAno','quintoAno','sextoAno','setimoAno','oitavoAno','nonoAno'], ['rural','Estadual','B','D','C','C','B','B','B','B','A']))
+prob = c.calcProbCondClasseDadoAtributos("norte", v)
+
+print prob
+
+r = c.classifica(v)
+print r

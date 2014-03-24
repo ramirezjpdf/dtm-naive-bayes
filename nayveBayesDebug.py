@@ -30,15 +30,20 @@ class Classificador:
 		
 	def calcProbCondClasseDadoAtributos(self, classeValor, atribs):
 		prob = self.probsPriori[classeValor]
+		print "prob a priori = " + str(prob)
 		for atribNome in atribs.keys():
+			print atribNome + " eh " + atribs[atribNome]
 			probAtual = self.getProbCond(atribNome, atribs[atribNome], classeValor)
 			prob *= probAtual
+			print atribs[atribNome] + " : " + str(probAtual)
 		return prob
 		
 	def classifica(self, data):
 		probs = {}
 		for classeValor in self.classe.valores:
+			print classeValor
 			probs[classeValor] = self.calcProbCondClasseDadoAtributos(classeValor, data)
+			print probs[classeValor]
 		return max(probs, key=probs.get)
 		
 class Treinador:
@@ -81,9 +86,12 @@ class Treinador:
 	def calcProbsCondsParaTodosAtribsParaTodasClasses(self):
 		probsConds = []
 		for classeValor in self.classe.valores:
+			#print classeValor
 			for atrib in self.atribs:
+				#print "\t" + atrib.atribNome
 				p = self.calcProbCondAtribDadaClasse(atrib, classeValor)
 				probsConds.append(p)
+				#print "\t\t" + str(p.probsConds)
 		return probsConds
 	
 	def treina(self):
