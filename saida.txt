@@ -1,0 +1,371 @@
+dada a classe norte
+as probs condicionais do atributo localizacao sao
+{'rural': 0.42857142857142855, 'urbana': 0.5714285714285714}
+soma = 1.0
+dada a classe norte
+as probs condicionais do atributo rede sao
+{'Federal': 0.14285714285714285, 'Particular': 0.2857142857142857, 'Municipal': 0.2857142857142857, 'Estadual': 0.2857142857142857}
+soma = 1.0
+dada a classe norte
+as probs condicionais do atributo primeiroAno sao
+{'A': 0.7142857142857143, 'C': 0.0001, 'B': 0.14285714285714285, 'E': 0.14285714285714285, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo segundoAno sao
+{'A': 0.2857142857142857, 'C': 0.42857142857142855, 'B': 0.0001, 'E': 0.2857142857142857, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo terceiroAno sao
+{'A': 0.2857142857142857, 'C': 0.5714285714285714, 'B': 0.0001, 'E': 0.0001, 'D': 0.14285714285714285}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo quartoAno sao
+{'A': 0.2857142857142857, 'C': 0.2857142857142857, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo quintoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo sextoAno sao
+{'A': 0.14285714285714285, 'C': 0.42857142857142855, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo setimoAno sao
+{'A': 0.14285714285714285, 'C': 0.14285714285714285, 'B': 0.7142857142857143, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo oitavoAno sao
+{'A': 0.42857142857142855, 'C': 0.2857142857142857, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe norte
+as probs condicionais do atributo nonoAno sao
+{'A': 0.42857142857142855, 'C': 0.0001, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe nordeste
+as probs condicionais do atributo localizacao sao
+{'rural': 0.5, 'urbana': 0.5}
+soma = 1.0
+dada a classe nordeste
+as probs condicionais do atributo rede sao
+{'Federal': 0.25, 'Particular': 0.25, 'Municipal': 0.25, 'Estadual': 0.25}
+soma = 1.0
+dada a classe nordeste
+as probs condicionais do atributo primeiroAno sao
+{'A': 0.625, 'C': 0.0001, 'B': 0.125, 'E': 0.25, 'D': 0.0001}
+soma = 1.0002
+dada a classe nordeste
+as probs condicionais do atributo segundoAno sao
+{'A': 0.125, 'C': 0.375, 'B': 0.25, 'E': 0.125, 'D': 0.125}
+soma = 1.0
+dada a classe nordeste
+as probs condicionais do atributo terceiroAno sao
+{'A': 0.375, 'C': 0.5, 'B': 0.125, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe nordeste
+as probs condicionais do atributo quartoAno sao
+{'A': 0.375, 'C': 0.25, 'B': 0.375, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe nordeste
+as probs condicionais do atributo quintoAno sao
+{'A': 0.375, 'C': 0.25, 'B': 0.375, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe nordeste
+as probs condicionais do atributo sextoAno sao
+{'A': 0.25, 'C': 0.125, 'B': 0.125, 'E': 0.125, 'D': 0.375}
+soma = 1.0
+dada a classe nordeste
+as probs condicionais do atributo setimoAno sao
+{'A': 0.125, 'C': 0.5, 'B': 0.25, 'E': 0.125, 'D': 0.0001}
+soma = 1.0001
+dada a classe nordeste
+as probs condicionais do atributo oitavoAno sao
+{'A': 0.375, 'C': 0.125, 'B': 0.5, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe nordeste
+as probs condicionais do atributo nonoAno sao
+{'A': 0.5, 'C': 0.0001, 'B': 0.5, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sudeste
+as probs condicionais do atributo localizacao sao
+{'rural': 0.42857142857142855, 'urbana': 0.5714285714285714}
+soma = 1.0
+dada a classe sudeste
+as probs condicionais do atributo rede sao
+{'Federal': 0.14285714285714285, 'Particular': 0.2857142857142857, 'Municipal': 0.2857142857142857, 'Estadual': 0.2857142857142857}
+soma = 1.0
+dada a classe sudeste
+as probs condicionais do atributo primeiroAno sao
+{'A': 0.8571428571428571, 'C': 0.0001, 'B': 0.14285714285714285, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sudeste
+as probs condicionais do atributo segundoAno sao
+{'A': 0.7142857142857143, 'C': 0.14285714285714285, 'B': 0.14285714285714285, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sudeste
+as probs condicionais do atributo terceiroAno sao
+{'A': 0.5714285714285714, 'C': 0.14285714285714285, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sudeste
+as probs condicionais do atributo quartoAno sao
+{'A': 0.8571428571428571, 'C': 0.0001, 'B': 0.14285714285714285, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sudeste
+as probs condicionais do atributo quintoAno sao
+{'A': 0.42857142857142855, 'C': 0.0001, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sudeste
+as probs condicionais do atributo sextoAno sao
+{'A': 0.2857142857142857, 'C': 0.42857142857142855, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sudeste
+as probs condicionais do atributo setimoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sudeste
+as probs condicionais do atributo oitavoAno sao
+{'A': 0.2857142857142857, 'C': 0.0001, 'B': 0.7142857142857143, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sudeste
+as probs condicionais do atributo nonoAno sao
+{'A': 0.42857142857142855, 'C': 0.2857142857142857, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sul
+as probs condicionais do atributo localizacao sao
+{'rural': 0.42857142857142855, 'urbana': 0.5714285714285714}
+soma = 1.0
+dada a classe sul
+as probs condicionais do atributo rede sao
+{'Federal': 0.14285714285714285, 'Particular': 0.2857142857142857, 'Municipal': 0.2857142857142857, 'Estadual': 0.2857142857142857}
+soma = 1.0
+dada a classe sul
+as probs condicionais do atributo primeiroAno sao
+{'A': 1.0, 'C': 0.0001, 'B': 0.0001, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0004
+dada a classe sul
+as probs condicionais do atributo segundoAno sao
+{'A': 0.2857142857142857, 'C': 0.2857142857142857, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sul
+as probs condicionais do atributo terceiroAno sao
+{'A': 0.42857142857142855, 'C': 0.0001, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sul
+as probs condicionais do atributo quartoAno sao
+{'A': 0.42857142857142855, 'C': 0.0001, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sul
+as probs condicionais do atributo quintoAno sao
+{'A': 0.42857142857142855, 'C': 0.0001, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe sul
+as probs condicionais do atributo sextoAno sao
+{'A': 0.2857142857142857, 'C': 0.5714285714285714, 'B': 0.14285714285714285, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sul
+as probs condicionais do atributo setimoAno sao
+{'A': 0.14285714285714285, 'C': 0.42857142857142855, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sul
+as probs condicionais do atributo oitavoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe sul
+as probs condicionais do atributo nonoAno sao
+{'A': 0.7142857142857143, 'C': 0.0001, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe centroOeste
+as probs condicionais do atributo localizacao sao
+{'rural': 0.42857142857142855, 'urbana': 0.5714285714285714}
+soma = 1.0
+dada a classe centroOeste
+as probs condicionais do atributo rede sao
+{'Federal': 0.14285714285714285, 'Particular': 0.2857142857142857, 'Municipal': 0.2857142857142857, 'Estadual': 0.2857142857142857}
+soma = 1.0
+dada a classe centroOeste
+as probs condicionais do atributo primeiroAno sao
+{'A': 0.7142857142857143, 'C': 0.0001, 'B': 0.2857142857142857, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe centroOeste
+as probs condicionais do atributo segundoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe centroOeste
+as probs condicionais do atributo terceiroAno sao
+{'A': 0.2857142857142857, 'C': 0.2857142857142857, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe centroOeste
+as probs condicionais do atributo quartoAno sao
+{'A': 0.2857142857142857, 'C': 0.0001, 'B': 0.7142857142857143, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe centroOeste
+as probs condicionais do atributo quintoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe centroOeste
+as probs condicionais do atributo sextoAno sao
+{'A': 0.2857142857142857, 'C': 0.5714285714285714, 'B': 0.14285714285714285, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe centroOeste
+as probs condicionais do atributo setimoAno sao
+{'A': 0.2857142857142857, 'C': 0.14285714285714285, 'B': 0.5714285714285714, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0002
+dada a classe centroOeste
+as probs condicionais do atributo oitavoAno sao
+{'A': 0.5714285714285714, 'C': 0.0001, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+dada a classe centroOeste
+as probs condicionais do atributo nonoAno sao
+{'A': 0.5714285714285714, 'C': 0.0001, 'B': 0.42857142857142855, 'E': 0.0001, 'D': 0.0001}
+soma = 1.0003
+0.0001
+prob a priori = 0.194444444444
+terceiroAno eh C
+C : 0.571428571429
+sextoAno eh B
+B : 0.428571428571
+nonoAno eh A
+A : 0.428571428571
+quintoAno eh B
+B : 0.571428571429
+quartoAno eh C
+C : 0.285714285714
+setimoAno eh B
+B : 0.714285714286
+rede eh Estadual
+Estadual : 0.285714285714
+oitavoAno eh B
+B : 0.285714285714
+primeiroAno eh B
+B : 0.142857142857
+localizacao eh rural
+rural : 0.428571428571
+segundoAno eh D
+D : 0.0001
+1.18948474668e-09
+norte
+prob a priori = 0.194444444444
+terceiroAno eh C
+C : 0.571428571429
+sextoAno eh B
+B : 0.428571428571
+nonoAno eh A
+A : 0.428571428571
+quintoAno eh B
+B : 0.571428571429
+quartoAno eh C
+C : 0.285714285714
+setimoAno eh B
+B : 0.714285714286
+rede eh Estadual
+Estadual : 0.285714285714
+oitavoAno eh B
+B : 0.285714285714
+primeiroAno eh B
+B : 0.142857142857
+localizacao eh rural
+rural : 0.428571428571
+segundoAno eh D
+D : 0.0001
+1.18948474668e-09
+nordeste
+prob a priori = 0.222222222222
+terceiroAno eh C
+C : 0.5
+sextoAno eh B
+B : 0.125
+nonoAno eh A
+A : 0.5
+quintoAno eh B
+B : 0.375
+quartoAno eh C
+C : 0.25
+setimoAno eh B
+B : 0.25
+rede eh Estadual
+Estadual : 0.25
+oitavoAno eh B
+B : 0.5
+primeiroAno eh B
+B : 0.125
+localizacao eh rural
+rural : 0.5
+segundoAno eh D
+D : 0.125
+1.58945719401e-07
+sudeste
+prob a priori = 0.194444444444
+terceiroAno eh C
+C : 0.142857142857
+sextoAno eh B
+B : 0.285714285714
+nonoAno eh A
+A : 0.428571428571
+quintoAno eh B
+B : 0.571428571429
+quartoAno eh C
+C : 0.0001
+setimoAno eh B
+B : 0.571428571429
+rede eh Estadual
+Estadual : 0.285714285714
+oitavoAno eh B
+B : 0.714285714286
+primeiroAno eh B
+B : 0.142857142857
+localizacao eh rural
+rural : 0.428571428571
+segundoAno eh D
+D : 0.0001
+1.38773220446e-13
+sul
+prob a priori = 0.194444444444
+terceiroAno eh C
+C : 0.0001
+sextoAno eh B
+B : 0.142857142857
+nonoAno eh A
+A : 0.714285714286
+quintoAno eh B
+B : 0.571428571429
+quartoAno eh C
+C : 0.0001
+setimoAno eh B
+B : 0.428571428571
+rede eh Estadual
+Estadual : 0.285714285714
+oitavoAno eh B
+B : 0.571428571429
+primeiroAno eh B
+B : 0.0001
+localizacao eh rural
+rural : 0.428571428571
+segundoAno eh D
+D : 0.0001
+3.39994390093e-20
+centroOeste
+prob a priori = 0.194444444444
+terceiroAno eh C
+C : 0.285714285714
+sextoAno eh B
+B : 0.142857142857
+nonoAno eh A
+A : 0.571428571429
+quintoAno eh B
+B : 0.571428571429
+quartoAno eh C
+C : 0.0001
+setimoAno eh B
+B : 0.571428571429
+rede eh Estadual
+Estadual : 0.285714285714
+oitavoAno eh B
+B : 0.428571428571
+primeiroAno eh B
+B : 0.285714285714
+localizacao eh rural
+rural : 0.428571428571
+segundoAno eh D
+D : 0.0001
+2.22037152714e-13
+nordeste
