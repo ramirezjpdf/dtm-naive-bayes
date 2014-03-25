@@ -7,7 +7,7 @@ VALORES_CLASSE_RENDIMENTO_ESCOLAR = ["norte", "nordeste", "sudeste", "sul", "cen
 
 VALORES_ATTR_ANO = ["A", "B", "C", "D", "E"]
 
-def converterCsvParaRendimentoEscolar(csvpath):
+def converterCsvParaRendimentosEscolares(csvpath):
 	rendimentosEscolares = []
 	with open(csvpath, "rb") as csvfo:
 		reader = csv.reader(csvfo, delimiter=";")
@@ -24,8 +24,19 @@ def criaTreinadorParaRendimentoEscolar(csvpath):
 			  Atributo("quintoAno",VALORES_ATTR_ANO), Atributo("sextoAno",VALORES_ATTR_ANO),
 			  Atributo("setimoAno",VALORES_ATTR_ANO), Atributo("oitavoAno",VALORES_ATTR_ANO),
 			  Atributo("nonoAno",VALORES_ATTR_ANO)]
-	datum = converterCsvParaRendimentoEscolar(csvpath)
+	datum = converterCsvParaRendimentosEscolares(csvpath)
 	return Treinador(datum, classe, atribs)
+	
+def redimentosEscolaresParaCsv(rendimentosEscolares, csvpath):
+	with open(csvpath, "wb") as csvfo:
+		writer = csv.writer(csvfo, delimiter=";")
+		writer.writerow(["regiao", "localizacao", "rede", "primeiroAno", "segundoAno", "terceiroAno",
+						 "quartoAno", "quintoAno", "sextoAno", "setimoAno", "oitavoAno", "nonoAno"])
+		for rendimentoEscolar in rendimentosEscolares:
+			writer.writerow([rendimentoEscolar.regiao, rendimentoEscolar.localizacao, rendimentoEscolar.rede, rendimentoEscolar.primeiroAno,
+							 rendimentoEscolar.segundoAno, rendimentoEscolar.terceiroAno, rendimentoEscolar.quartoAno,
+							 rendimentoEscolar.quintoAno, rendimentoEscolar.sextoAno, rendimentoEscolar.setimoAno,
+							 rendimentoEscolar.oitavoAno, rendimentoEscolar.nonoAno])
 
 class RendimentoEscolar:
 	def __init__(self, regiao,localizacao,rede,primeiroAno,segundoAno,terceiroAno,quartoAno,quintoAno,sextoAno,setimoAno,oitavoAno,nonoAno):
